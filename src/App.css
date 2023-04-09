@@ -1,3 +1,11 @@
+h1::selection, h2::selection, h3::selection, p::selection, a::selection, img::selection {
+  background-color: #b8da8c7f;
+}
+
+button::selection {
+  background-color: transparent;
+}
+
 #home {
   height: 100vh;
   background-color: #1692D1;
@@ -10,6 +18,8 @@
 
 #image {
   border-radius: 1rem;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.15);
+
 }
 
 #btn-section {
@@ -40,18 +50,30 @@
   color: #1692D1;
 }
 
-#about {
+#modal {
   position: fixed;
   padding: 2rem;
   background-color: #fff;
   height: 90%; width: 65%;
   border-radius: 1rem;
-  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.15);
+}
 
+#x {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  place-content: center;
+  transition: all .15s ease-in-out;
+}
+
+#x:hover {
+  box-shadow: inset -3px 5px 3px 1px rgba(0, 0, 0, 0.25);
+  background-color: #1692D1;
+  color: #fff;
 }
 
 @keyframes fadeOut {
