@@ -1,11 +1,10 @@
 import React from 'react'
-import Me from '../images/me.webp'
 import Sign from '../images/sign.PNG'
 
-export default function CoverLetter({isVisible, setShow, fadeProps}) {
+export default function CoverLetter({isVisibleCL, setShowCL, fadePropsCL}) {
 
   return (
-    <div {...fadeProps} id='modal' className='space-y-12 text-xl'>
+    <div {...fadePropsCL} id='modal' className='space-y-12 text-xl'>
         <div className='flex justify-betweem'>
             <div className='w-full space-y-16'>
                 <div>
@@ -17,7 +16,7 @@ export default function CoverLetter({isVisible, setShow, fadeProps}) {
                         i am writing to let you know that i have keen interest in joining you as part of the bar crew as a part timer.
                         as a food & beverage enthusiast with great customer service abilities, i am confident that i would bring nothing but great service and addition to your team.
                         <br/><br/>
-                        i am currently pursuing a degree in computer science at gadjah mada university, which had taught be a great deal about working under pressure with brief time intervals. despite having little to no experience in the fast food industry, i believe that with utilizing all my abilities that i have achieved throughout the course of my university life, i am able to provide a great plus to your restaurant, both with my soft-skills and hard-skills, which is highly concentrated in web development. 
+                        i am currently pursuing a degree in computer science at gadjah mada university, which had taught be a great deal about working under pressure with brief time intervals. despite having little to no experience in the fast food industry, i believe that with utilizing all my abilities that i have achieved throughout the course of my university life, i am able to provide a great addition to your restaurant, both with my soft-skills and hard-skills, which is highly concentrated in web development. 
                         <br/><br/>
                         therefore, not only that i could work well under pressure and adapt to a new working environment, providing the best service to the customers, but also i could spice things up at the restaurant by helping create or develop a website in order to attract more and newer customers into the restaurant.
                         <br/><br/>
@@ -31,7 +30,7 @@ export default function CoverLetter({isVisible, setShow, fadeProps}) {
                 </div>
             </div>
             <div className='flex justify-items-end'>
-                <button id='x' onClick={() => setShow(!isVisible)} className='text-2xl grid items-start h-fit'>&times;</button>
+                <button id='x' onClick={() => setShowCL(!isVisibleCL)} className='text-2xl grid items-start h-fit'>&times;</button>
             </div>            
         </div>
     </div>

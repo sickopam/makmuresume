@@ -1,10 +1,10 @@
 import React from 'react'
 import Me from '../images/me.webp'
 
-export default function About({isVisible, setShow, fadeProps}) {
+export default function About({isVisibleAbout, setShowAbout, fadePropsAbout}) {
 
   return (
-    <div {...fadeProps} id='modal' className='space-y-12 text-xl'>
+    <div {...fadePropsAbout} id='modal' className='space-y-12 text-xl'>
         <div className='flex justify-between'>
             <img id='image' className='w-[35%]' src={Me} alt='me'></img>
             <div className='flex flex-col space-y-3'>
@@ -15,7 +15,7 @@ export default function About({isVisible, setShow, fadeProps}) {
                     </div>
                 ))}
             </div>
-            <button id='x' onClick={() => setShow(!isVisible)} className='text-2xl grid items-start h-fit'>&times;</button>
+            <button id='x' onClick={() => setShowAbout(!isVisibleAbout)} className='text-2xl grid items-start h-fit'>&times;</button>
         </div>
 
         <div>
