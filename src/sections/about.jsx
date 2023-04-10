@@ -20,8 +20,19 @@ export default function About({isVisibleAbout, setShowAbout, fadePropsAbout}) {
             </div>
         </div>
 
-        <div>
+        <div className='space-y-8'>
             <p>a student driven by motivation and passion to work. i am able to adapt to new working environments, as well as get along with co-workers in a brief period of time. i have active hobbies that accompany me throughout times, thus, laziness was never an option for me, especially when it comes to working professionally with other people or comrades.</p>
+
+            <div className='flex justify-evenly text-center'>
+                {skills.map((l, i) => (
+                    <div key={i} className=''>
+                        <h3 className='font-semibold'>{l.list}</h3>
+                        {l.li.map((l) => (
+                            <h4>{l}</h4>
+                        ))}
+                    </div>
+                ))}
+            </div>
         </div>
 
         <div className='flex justify-center block lg:hidden'>
@@ -40,4 +51,9 @@ const details = [
   {title: 'address:', sub: 'jl. pogung baru block E no. 48, sleman'},
   {title: 'current occupation:', sub: 'semester 4 computer science student'},
   {title: 'campus:', sub: 'gadjah mada university'},
+]
+
+const skills = [
+  {list: 'soft skills:', li: ['teamwork', 'adaptability', 'problem solving', 'critical thinking', 'well-organized']},
+  {list: 'hard skills:', li: ['web development', 'mobile development', 'calculations', 'fast-paced', 'pressurized work efficiency']},
 ]
