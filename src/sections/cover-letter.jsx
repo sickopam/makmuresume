@@ -4,14 +4,14 @@ import Sign from '../images/sign.PNG'
 export default function CoverLetter({isVisibleCL, setShowCL, fadePropsCL}) {
 
   return (
-    <div {...fadePropsCL} id='modal' className='space-y-12 text-xl'>
+    <div {...fadePropsCL} id='modal' className='space-y-12 text-xl overflow-y-scroll'>
         <div className='flex justify-betweem'>
             <div className='w-full space-y-16'>
                 <div>
                     <h2 className='font-bold'>MAKMUR</h2>
                     <h3>jl. pakuningratan no. 37, yogyakarta</h3>
                 </div>
-                <div className='text-base'>
+                <div className='text-[1.1rem]'>
                     <p>
                         i am writing to let you know that i have keen interest in joining you as part of the bar crew as a part timer.
                         as a food & beverage enthusiast with great customer service abilities, i am confident that i would bring nothing but great service and addition to your team.
@@ -24,13 +24,13 @@ export default function CoverLetter({isVisibleCL, setShowCL, fadePropsCL}) {
                     </p>
                     <div className=''>
                         <h2><br/>sincerely,</h2>
-                        <img className='w-[10%]' src={Sign} alt='signature'/>
+                        <img id='sign' className='md:w-[10%]' src={Sign} alt='signature'/>
                         <h3>naufal abiyyu</h3>
                     </div>
                 </div>
             </div>
             <div className='flex justify-items-end'>
-                <button id='x' onClick={() => setShowCL(!isVisibleCL)} className='text-2xl grid items-start h-fit'>&times;</button>
+                <button id='x' onClick={() => setShowCL(!isVisibleCL)} className='h-fit'>&times;</button>
             </div>            
         </div>
     </div>
