@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.cdbf1221.css",
-    "main.js": "/static/js/main.2d470b2f.js",
-    "static/js/787.06b05562.chunk.js": "/static/js/787.06b05562.chunk.js",
-    "static/media/sign.PNG": "/static/media/sign.6bf48eb78045ea15abb9.PNG",
-    "static/media/Naufal Abiyyu_CV.pdf": "/static/media/Naufal Abiyyu_CV.6a32e015350ab8063ee4.pdf",
-    "static/media/me.webp": "/static/media/me.4135cc819bafdceed97f.webp",
-    "index.html": "/index.html",
-    "main.cdbf1221.css.map": "/static/css/main.cdbf1221.css.map",
-    "main.2d470b2f.js.map": "/static/js/main.2d470b2f.js.map",
-    "787.06b05562.chunk.js.map": "/static/js/787.06b05562.chunk.js.map"
+    "main.css": "/makmuresume/static/css/main.cdbf1221.css",
+    "main.js": "/makmuresume/static/js/main.1384db12.js",
+    "static/js/787.06b05562.chunk.js": "/makmuresume/static/js/787.06b05562.chunk.js",
+    "static/media/sign.PNG": "/makmuresume/static/media/sign.6bf48eb78045ea15abb9.PNG",
+    "static/media/Naufal Abiyyu_CV.pdf": "/makmuresume/static/media/Naufal Abiyyu_CV.6a32e015350ab8063ee4.pdf",
+    "static/media/me.webp": "/makmuresume/static/media/me.4135cc819bafdceed97f.webp",
+    "index.html": "/makmuresume/index.html",
+    "main.cdbf1221.css.map": "/makmuresume/static/css/main.cdbf1221.css.map",
+    "main.1384db12.js.map": "/makmuresume/static/js/main.1384db12.js.map",
+    "787.06b05562.chunk.js.map": "/makmuresume/static/js/787.06b05562.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdbf1221.css",
-    "static/js/main.2d470b2f.js"
+    "static/js/main.1384db12.js"
   ]
 }
