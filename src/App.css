@@ -19,7 +19,23 @@ button::selection {
 #image {
   border-radius: 1rem;
   box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.15);
+  @apply w-full lg:w-[40%];
+}
 
+#me-n-details {
+  @apply lg:flex justify-between space-y-5 lg:space-y-0 lg:space-x-5;
+}
+
+#detail-container {
+  @apply flex flex-col space-y-3;
+}
+
+#details {
+  @apply flex-wrap md:inline-flex md:space-x-1 text-center;
+}
+
+#details #title {
+  @apply font-semibold
 }
 
 #btn-section {
@@ -62,6 +78,7 @@ button::selection {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.15);
+    @apply space-y-12 text-base md:text-lg lg:text-xl overflow-y-scroll text-justify;
   }
 
   #sign {
@@ -86,6 +103,7 @@ button::selection {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.15);
+    @apply space-y-12 text-base md:text-lg lg:text-xl overflow-y-scroll text-justify;
   }
 }
 
@@ -100,6 +118,7 @@ button::selection {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.15);
+    @apply space-y-12 text-base md:text-lg lg:text-xl overflow-y-scroll text-justify;
   }
 
   #modal #image {
@@ -119,20 +138,9 @@ button::selection {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.15);
+    @apply space-y-12 text-base md:text-lg lg:text-xl overflow-y-scroll text-justify;
   }
 }
-
-/* #modal {
-  position: fixed;
-  padding: 2rem;
-  background-color: #fff;
-  height: 90%; width: 68%;
-  border-radius: 1rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.15);
-} */
 
 #x {
   height: 2rem;
