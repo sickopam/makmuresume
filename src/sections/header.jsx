@@ -1,14 +1,17 @@
 import React from 'react'
 import About from './about'
 import CoverLetter from './cover-letter';
+import Cv from './cv';
 
 import { useFadeAbout } from '../components/fade-about';
 import { useFadeCL } from '../components/fade-cover-letter';
+import { useFadeCV } from '../components/fade-cv';
 
 export default function Header() {
 
   const [isVisibleAbout, setShowAbout, fadePropsAbout] = useFadeAbout();
   const [isVisibleCL, setShowCL, fadePropsCL] = useFadeCL()
+  const [isVisibleCV, setShowCV, fadePropsCV] = useFadeCV()
 
   return (
     <div id='home'>
@@ -26,9 +29,12 @@ export default function Header() {
                     <a href='https://instagram.com/folnau' target='_blank' rel='noreferrer' className='md:text-lg'>instagram</a>
                 </button>
 
-                <button id='btn' className='btn-effect'>
+                <button onClick={() => setShowCV(!isVisibleCV)} id='btn' className='btn-effect'>
                     <h3 className='md:text-lg'>cv</h3>
                 </button>
+                {isVisibleCV && (
+                    <Cv isVisibleCV={isVisibleCV} setShowCV={setShowCV} fadePropsCV={fadePropsCV}/>
+                )}
 
                 <button id='btn' className='btn-effect'>
                     <a href='mailto:naubiyyu@gmail.com' className='md:text-lg'>email</a>

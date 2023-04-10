@@ -38,6 +38,16 @@ button::selection {
   @apply font-semibold
 }
 
+iframe {
+  width: 100%;
+  height: 95%;
+}
+
+#cv-container {
+  /* height: 100%; */
+  background-color: #000;
+}
+
 #btn-section {
   @apply flex-wrap inline-flex md:space-x-3 gap-2 md:gap-0;
 }
