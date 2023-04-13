@@ -1,4 +1,4 @@
-h1::selection, h2::selection, h3::selection, p::selection, a::selection, br::selection, img::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::selection, br::selection, img::selection {
   background-color: #b8da8c7f;
 }
 
